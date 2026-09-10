@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MacroMicro 2026 年 9 月總經時事力測驗" />
+    <meta name="theme-color" content="#343a40" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="你的總經雷達有多靈敏？｜MacroMicro" />
+    <meta property="og:description" content="用 10 題總經時事題，測出你的總經角色。" />
+    <meta property="og:url" content="https://macromicrocs.github.io/macro-pulse-quiz/" />
+    <title>你的總經雷達有多靈敏？｜MacroMicro</title>
+    <link rel="canonical" href="https://macromicrocs.github.io/macro-pulse-quiz/" />
+    <link rel="icon" type="image/png" href="assets/mm-logo-mark.png" />
+    <link rel="apple-touch-icon" href="assets/mm-logo-mark.png" />
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="https://www.macromicro.me/" target="_blank" rel="noreferrer" aria-label="前往 MacroMicro 官網">
+        <img src="assets/mm-logo-horizontal.png" alt="財經 M 平方 MacroMicro" />
+      </a>
+      <span class="edition">2026 / 09 時事版</span>
+    </header>
+
+    <main>
+      <section id="start-screen" class="screen start-screen is-active" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="festival-tag"><span>CAREER FESTIVAL</span><strong>現場限定挑戰</strong></div>
+          <p class="eyebrow"><span></span> MACRO PULSE QUIZ · 2026</p>
+          <h1 id="hero-title">你的<span class="hero-accent">總經雷達</span><br /><span class="hero-question">有多靈敏？</span></h1>
+          <p class="hero-lead">從非農、通膨到債匯市場，用 10 題測出你對近期全球經濟的掌握度。</p>
+          <div class="meta-row" aria-label="測驗資訊">
+            <span>10 題單選</span>
+            <span>約 3 分鐘</span>
+            <span>滿分 100</span>
+          </div>
+          <div class="hero-reward">
+            <span class="gift-symbol" aria-hidden="true"><i></i></span>
+            <span class="reward-copy"><small>完成挑戰 · 解鎖雙重驚喜</small><strong>試用碼 <em>＋</em> 超精美小禮</strong></span>
+            <span class="reward-seal" aria-hidden="true">待<br />解鎖</span>
+            <i class="reward-spark spark-one" aria-hidden="true">✦</i>
+            <i class="reward-spark spark-two" aria-hidden="true">✦</i>
+          </div>
+          <button id="start-btn" class="primary-btn hero-start-btn" type="button"><span>立即測出我的總經角色</span><span aria-hidden="true">→</span></button>
+          <p class="as-of">資料更新至 2026.09.06</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-label"><span>LIVE</span> GLOBAL MARKET SIGNALS</div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="data-globe">
+            <svg viewBox="0 0 420 420">
+              <defs>
+                <radialGradient id="planetGlow" cx="38%" cy="34%" r="72%">
+                  <stop offset="0" stop-color="#62ead1" stop-opacity=".31" />
+                  <stop offset=".45" stop-color="#1a6f66" stop-opacity=".2" />
+                  <stop offset="1" stop-color="#061310" stop-opacity=".9" />
+                </radialGradient>
+                <radialGradient id="atmosphere" cx="50%" cy="50%" r="50%">
+                  <stop offset=".72" stop-color="#4de0c5" stop-opacity="0" />
+                  <stop offset=".91" stop-color="#4de0c5" stop-opacity=".12" />
+                  <stop offset="1" stop-color="#4de0c5" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="landGlow" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#70ead3" stop-opacity=".34" />
+                  <stop offset="1" stop-color="#258f83" stop-opacity=".08" />
+                </linearGradient>
+                <clipPath id="planetClip"><circle cx="210" cy="210" r="174" /></clipPath>
+              </defs>
+              <circle cx="210" cy="210" r="202" fill="url(#atmosphere)" />
+              <circle cx="210" cy="210" r="174" fill="url(#planetGlow)" stroke="#5be3cb" stroke-opacity=".4" />
+              <g clip-path="url(#planetClip)" class="globe-grid">
+                <ellipse cx="210" cy="210" rx="174" ry="65" />
+                <ellipse cx="210" cy="210" rx="174" ry="117" />
+                <ellipse cx="210" cy="210" rx="68" ry="174" />
+                <ellipse cx="210" cy="210" rx="121" ry="174" />
+                <path d="M36 210h348M210 36v348" />
+              </g>
+              <g clip-path="url(#planetClip)" fill="url(#landGlow)" stroke="#83ead7" stroke-opacity=".22" stroke-width="1.2" class="continents">
+                <path d="M68 120c19-27 51-45 81-43l29 12 12 18-20 12-7 19-25 5-13 22-20-6-17-22-20-17Z" />
+                <path d="M142 181l26 10 15 25-2 31-16 31-9 42-17-18 1-33-14-29 6-28-12-16 22-15Z" />
+                <path d="M218 99l22-8 21 8 9 14 30 1 36 19 19 23-19 13-27-8-20 8-15-8-8-20-25-7-18-17-5-20Z" />
+                <path d="M233 155l29 7 24 21-7 29-19 15-6 36-23 31-18-20 5-31-15-21 7-27-13-22 16-18Z" />
+                <path d="M305 270l24-8 22 11 4 20-18 14-28-6-12-15 8-16Z" />
+                <path d="M188 111l15-10 14 5-4 14-17 4-8-13Z" />
+              </g>
+              <ellipse class="orbit-trace" cx="210" cy="210" rx="201" ry="82" transform="rotate(-19 210 210)" />
+              <circle class="orbit-satellite" cx="387" cy="119" r="6" />
+              <g class="globe-core">
+                <circle cx="210" cy="210" r="34" />
+                <circle cx="210" cy="210" r="14" />
+                <path d="M210 187v46M187 210h46" />
+              </g>
+              <g class="data-stars">
+                <circle cx="105" cy="140" r="3" /><circle cx="293" cy="114" r="3" /><circle cx="321" cy="247" r="3" />
+                <circle cx="121" cy="286" r="3" /><circle cx="258" cy="321" r="3" />
+              </g>
+            </svg>
+          </div>
+          <div class="signal-dot dot-one"></div>
+          <div class="signal-dot dot-two"></div>
+          <div class="signal-dot dot-three"></div>
+          <div class="float-card card-top"><i></i><span>本週關鍵訊號</span><strong>就業 × CPI × 利率</strong></div>
+          <div class="float-card card-bottom"><i></i><span>你的任務</span><strong>連結事件與市場反應</strong></div>
+          <div class="level-card">
+            <span>你的總經段位</span>
+            <div><b>小白</b><b>入門</b><b>達人</b><b>大神</b></div>
+            <i></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz-screen" class="screen quiz-screen" aria-labelledby="question-title">
+        <div class="quiz-shell">
+          <div class="quiz-topbar">
+            <div>
+              <p class="eyebrow"><span></span> MACRO PULSE QUIZ</p>
+              <p id="progress-label" class="progress-label">QUESTION 01 / 10</p>
+            </div>
+            <button id="exit-btn" class="text-btn" type="button">回到首頁</button>
+          </div>
+          <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+
+          <article class="question-card">
+            <div id="topic-tag" class="topic-tag">美國就業</div>
+            <h2 id="question-title"></h2>
+            <div id="options" class="options" role="radiogroup" aria-label="作答選項"></div>
+          </article>
+
+          <div class="quiz-actions">
+            <p id="selection-hint" class="selection-hint" aria-live="polite">請選擇一個答案</p>
+            <button id="next-btn" class="primary-btn" type="button" disabled>下一題 <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="result-screen" class="screen result-screen" aria-labelledby="result-title">
+        <div class="result-shell">
+          <div class="result-heading">
+            <div>
+              <p class="eyebrow"><span></span> YOUR MACRO PROFILE</p>
+              <h1 id="result-title">測驗完成</h1>
+            </div>
+            <div class="score-lockup" aria-label="測驗分數"><strong id="score-value">0</strong><span>/ 100</span></div>
+          </div>
+
+          <div class="result-grid">
+            <div class="profile-panel">
+              <img id="result-image" src="" alt="" />
+              <div class="profile-copy">
+                <p id="result-kicker"></p>
+                <h2 id="result-name"></h2>
+                <p id="result-description"></p>
+              </div>
+            </div>
+
+            <aside class="reward-card" aria-labelledby="reward-title">
+              <p class="reward-label">完成測驗獲得 2 份小驚喜</p>
+              <h2 id="reward-title">7 天訂閱試用</h2>
+              <p>把知識轉成判斷力，使用 7 天訂閱試用體驗 MacroMicro 的數據與研究內容。</p>
+              <div class="promo-code">
+                <span>訂閱試用碼</span>
+                <strong id="promo-text">CAREERFEST</strong>
+                <button id="copy-btn" type="button" aria-label="複製訂閱試用碼 CAREERFEST">複製</button>
+              </div>
+              <a class="reward-link" href="https://www.macromicro.me/promos/443/careerfestival?c=CAREERFEST" target="_blank" rel="noreferrer">前往訂閱頁面兌換 <span aria-hidden="true">↗</span></a>
+              <div class="booth-reward">
+                <span class="booth-badge">完成禮 · 現場限定</span>
+                <h3>MM 黃銅書籤或 MM 貼紙包</h3>
+                <p>憑本得分結果頁面，即可前往 Cake Career Festival <strong>A39 財經M平方攤位</strong>，擇一兌換完成禮。</p>
+              </div>
+            </aside>
+          </div>
+
+          <section class="review-section" aria-labelledby="review-title">
+            <div class="review-header">
+              <div>
+                <p class="section-number">ANSWER REVIEW</p>
+                <h2 id="review-title">看看你掌握了哪些訊號</h2>
+              </div>
+              <p><span id="correct-count">0</span> 題答對</p>
+            </div>
+            <div id="review-list" class="review-list"></div>
+          </section>
+
+          <div class="result-actions">
+            <button id="restart-btn" class="secondary-btn" type="button">重新測驗</button>
+            <a class="primary-btn link-btn" href="https://www.macromicro.me/" target="_blank" rel="noreferrer">探索更多總經數據 <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="disclaimer">題目依 2026 年 8 月底至 9 月初公開資料整理，僅供學習與娛樂，不構成投資建議。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>MacroMicro 總經時事力測驗</span>
+      <span>循環為主 · 數據為輔</span>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">試用碼已複製</div>
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
