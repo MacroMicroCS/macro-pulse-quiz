@@ -190,7 +190,7 @@ main { min-height: calc(100vh - 132px); }
 .text-btn { padding: 7px 0; color: var(--muted); background: transparent; cursor: pointer; border-bottom: 1px solid transparent; }
 .text-btn:hover { color: var(--ink); border-color: currentColor; }
 .progress-track { height: 3px; background: #d5d9d5; margin: 26px 0 34px; overflow: hidden; }
-.progress-track span { display: block; width: 10%; height: 100%; background: var(--mint); transition: width .45s ease; }
+.progress-track span { display: block; width: 16.6667%; height: 100%; background: var(--mint); transition: width .45s ease; }
 .question-card { min-height: 480px; padding: clamp(30px, 5vw, 58px); background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); }
 .topic-tag { display: inline-flex; padding: 7px 11px; margin-bottom: 24px; border-radius: 6px; color: #167665; background: #e3f7f1; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
 .question-card h2 { margin: 0 0 34px; font-size: clamp(25px, 3.4vw, 38px); line-height: 1.45; letter-spacing: -.03em; }
@@ -330,7 +330,7 @@ footer { min-height: 58px; padding: 18px clamp(22px, 5vw, 74px); display: flex; 
   .quiz-actions .primary-btn { width: 100%; }
   .result-heading { align-items: flex-start; }
   .score-lockup strong { font-size: 68px; }
-  .score-lockup span { display: none; }
+  .score-lockup span { display: inline; margin-left: 8px; font-size: 13px; }
   .profile-copy { padding: 25px 22px 28px; }
   .profile-copy h2 { font-size: 28px; }
   .review-section { margin-top: 58px; }

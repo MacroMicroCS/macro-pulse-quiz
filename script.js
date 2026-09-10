@@ -3,6 +3,20 @@ const SOURCE_JACKSON = "https://www.macromicro.me/blog/mm-weekly-premarket-updat
 
 const questions = [
   {
+    topic: "台灣景氣",
+    question: "台灣 7 月景氣燈號維持高檔，且內外需求同步擴張。下列哪項最符合這個訊號？",
+    options: [
+      "外需仍強，但內需已明顯轉弱",
+      "景氣動能仍具韌性，內外需求共同支撐",
+      "景氣主要由庫存回補支撐，終端需求尚未改善",
+      "燈號高檔主要反映股市，與實體經濟關聯有限"
+    ],
+    correct: 1,
+    explanation: "7 月景氣燈號持穩 41 分，內外需求同步擴張，顯示景氣動能仍具韌性，而非只靠單一部門支撐。",
+    source: SOURCE_JACKSON,
+    sourceLabel: "MacroMicro 8/30 一週盤前"
+  },
+  {
     topic: "美國就業",
     question: "美國 8 月非農就業大幅優於預期，但薪資增速放緩。這組數據最合理的解讀是？",
     options: [
@@ -13,20 +27,6 @@ const questions = [
     ],
     correct: 1,
     explanation: "8 月非農月增 16.2 萬人，高於市場預期；平均每小時薪資年增率則由 3.2% 放緩至 3.1%，呈現就業具韌性、薪資壓力未同步升高的組合。",
-    source: SOURCE_WEEKLY,
-    sourceLabel: "MacroMicro 9/6 一週盤前"
-  },
-  {
-    topic: "市場反應",
-    question: "強勁的美國非農就業數據公布後，美國公債殖利率與美元同步走高，主要反映市場如何調整預期？",
-    options: [
-      "提高聯準會近期升息的可能性",
-      "提高聯準會近期大幅降息的可能性",
-      "認為利率路徑不再需要參考通膨數據",
-      "認為強勁就業只會影響企業獲利，不影響政策"
-    ],
-    correct: 0,
-    explanation: "強勁就業降低了立即寬鬆的必要性，市場因而提高聯準會近期升息的定價，美債殖利率與美元同步走高。",
     source: SOURCE_WEEKLY,
     sourceLabel: "MacroMicro 9/6 一週盤前"
   },
@@ -45,20 +45,6 @@ const questions = [
     sourceLabel: "MacroMicro 9/6 一週盤前"
   },
   {
-    topic: "黃金市場",
-    question: "聯準會理事 Christopher Waller（華勒）的偏鴿談話一度帶動黃金反彈。最合理的傳導邏輯是？",
-    options: [
-      "談話態度降低市場升息預期，降低持有黃金的機會成本",
-      "偏鴿訊號代表黃金供給即將中斷",
-      "聯準會將直接購買黃金",
-      "偏鴿訊號必然使所有商品價格上漲"
-    ],
-    correct: 0,
-    explanation: "黃金不孳息；當偏鴿訊號降低市場對利率的預期，持有黃金的相對機會成本下降，通常有利金價。",
-    source: SOURCE_WEEKLY,
-    sourceLabel: "MacroMicro 9/6 一週盤前"
-  },
-  {
     topic: "能源市場",
     question: "西德州中級原油（WTI）價格再度站上 90 美元，主要受到中東衝突不確定性推動。這反映油價增加了哪種溢價？",
     options: [
@@ -73,60 +59,18 @@ const questions = [
     sourceLabel: "MacroMicro 9/6 一週盤前"
   },
   {
-    topic: "美國通膨",
-    question: "美國核心個人消費支出物價指數（核心 PCE）月增率回升，主要受到金融服務與保險價格影響。為何不宜立刻認定通膨全面惡化？",
+    topic: "黃金市場",
+    question: "聯準會理事 Christopher Waller（華勒）的偏鴿談話一度帶動黃金反彈。最合理的傳導邏輯是？",
     options: [
-      "核心 PCE 不包含任何服務價格，因此不具參考性",
-      "漲幅集中在與金融市場熱度相關的項目，且後續可能被調整",
-      "只要非農強勁，聯準會就不會參考核心 PCE",
-      "核心 PCE 年增率已經低於聯準會長期目標"
-    ],
-    correct: 1,
-    explanation: "本次核心月增回升主要由金融服務與保險項目帶動，該項目與市場熱絡程度有關，且後續預計調整，因此需搭配其他物價細項確認趨勢。",
-    source: SOURCE_JACKSON,
-    sourceLabel: "MacroMicro 8/30 一週盤前"
-  },
-  {
-    topic: "台灣景氣",
-    question: "台灣 7 月景氣燈號維持高檔，且內外需求同步擴張。下列哪項最符合這個訊號？",
-    options: [
-      "外需仍強，但內需已明顯轉弱",
-      "景氣動能仍具韌性，內外需求共同支撐",
-      "景氣主要由庫存回補支撐，終端需求尚未改善",
-      "燈號高檔主要反映股市，與實體經濟關聯有限"
-    ],
-    correct: 1,
-    explanation: "7 月景氣燈號持穩 41 分，內外需求同步擴張，顯示景氣動能仍具韌性，而非只靠單一部門支撐。",
-    source: SOURCE_JACKSON,
-    sourceLabel: "MacroMicro 8/30 一週盤前"
-  },
-  {
-    topic: "人工智慧與半導體",
-    question: "輝達（NVIDIA）財測優於預期，新一代人工智慧（AI）運算平台 Vera Rubin 也進入量產。這對半導體產業最直接的意義是？",
-    options: [
-      "AI 基礎建設需求仍在支撐先進晶片與相關供應鏈",
-      "半導體成長動能已由 AI 全面轉向消費電子",
-      "所有半導體次產業已進入相同幅度的擴張週期",
-      "AI 投資正在轉向純軟體，硬體需求的重要性下降"
+      "談話態度降低市場升息預期，降低持有黃金的機會成本",
+      "偏鴿訊號代表黃金供給即將中斷",
+      "聯準會將直接購買黃金",
+      "偏鴿訊號必然使所有商品價格上漲"
     ],
     correct: 0,
-    explanation: "財測與新平台量產顯示 AI 基礎建設需求仍在延續，直接支撐先進運算晶片與相關供應鏈；但不代表所有半導體次產業同步受惠。",
-    source: SOURCE_JACKSON,
-    sourceLabel: "MacroMicro 8/30 一週盤前"
-  },
-  {
-    topic: "亞洲匯率",
-    question: "隨著台灣與南韓升息預期增加，亞幣可能出現升值壓力。這對出口企業最可能產生什麼影響？",
-    options: [
-      "海外收入換回本國貨幣時，可能承受匯兌壓力",
-      "以美元計價的海外收入換回本幣後一定增加",
-      "因出口多以美元計價，企業不需要管理匯率風險",
-      "升值會同時提高所有進口成本與出口競爭力"
-    ],
-    correct: 0,
-    explanation: "本幣升值會使相同的美元收入換回較少本國貨幣，可能形成匯兌壓力；進口成本下降則可能提供部分抵銷。",
-    source: SOURCE_JACKSON,
-    sourceLabel: "MacroMicro 8/30 一週盤前"
+    explanation: "黃金不孳息；當偏鴿訊號降低市場對利率的預期，持有黃金的相對機會成本下降，通常有利金價。",
+    source: SOURCE_WEEKLY,
+    sourceLabel: "MacroMicro 9/6 一週盤前"
   },
   {
     topic: "債務與成長",
@@ -147,39 +91,39 @@ const questions = [
 const profiles = [
   {
     min: 0,
-    max: 20,
+    max: 1,
     name: "經濟小白",
     kicker: "STEP 1 · 建立觀察習慣",
     description: "你對總經世界還在起步，但每位投資高手都曾經是新手。先抓住就業、通膨與央行三條主線，你會很快看見數據之間的關係。",
-    image: "assets/economy-newbie.png",
-    alt: "經濟小白 10 到 20 分角色圖"
+    image: "assets/economy-newbie.png?v=2",
+    alt: "經濟小白，答對 0 到 1 題角色圖"
   },
   {
-    min: 30,
-    max: 50,
+    min: 2,
+    max: 3,
     name: "總經入門",
-    kicker: "STEP 3 · 串起數據邏輯",
+    kicker: "STEP 2 · 串起數據邏輯",
     description: "你已經有底子，能辨認重要數據與市場反應。下一步試著追蹤數據的前值、預期值與公布值，建立更完整的判讀脈絡。",
-    image: "assets/macro-starter.png",
-    alt: "總經入門 30 到 50 分角色圖"
+    image: "assets/macro-starter.png?v=2",
+    alt: "總經入門，答對 2 到 3 題角色圖"
   },
   {
-    min: 60,
-    max: 80,
+    min: 4,
+    max: 5,
     name: "總經達人",
     kicker: "DATA FLUENCY · 靈活判讀",
     description: "你已能靈活運用數據進行判斷，知道單一指標不能獨立解讀。持續交叉觀察景氣、政策與資產價格，就能讓訊號更立體。",
-    image: "assets/macro-master.png",
-    alt: "總經達人 60 到 80 分角色圖"
+    image: "assets/macro-master.png?v=2",
+    alt: "總經達人，答對 4 到 5 題角色圖"
   },
   {
-    min: 90,
-    max: 100,
+    min: 6,
+    max: 6,
     name: "總經大神",
     kicker: "MACRO EXPERT · 全面掌握",
     description: "你就是總經知識的代言人！不只掌握關鍵數據，也理解它們如何牽動央行、利率與跨資產市場，總經雷達全開。",
-    image: "assets/macro-god.png",
-    alt: "總經大神 90 到 100 分角色圖"
+    image: "assets/macro-god.png?v=2",
+    alt: "總經大神，6 題全對角色圖"
   }
 ];
 
@@ -231,7 +175,7 @@ function beginQuiz() {
 function renderQuestion() {
   const item = questions[currentQuestion];
   selected = answers[currentQuestion] ?? null;
-  els.progressLabel.textContent = `QUESTION ${String(currentQuestion + 1).padStart(2, "0")} / ${questions.length}`;
+  els.progressLabel.textContent = `QUESTION ${String(currentQuestion + 1).padStart(2, "0")} / ${String(questions.length).padStart(2, "0")}`;
   els.progressBar.style.width = `${((currentQuestion + 1) / questions.length) * 100}%`;
   els.topicTag.textContent = item.topic;
   els.questionTitle.textContent = item.question;
@@ -277,10 +221,9 @@ function advance() {
 
 function showResults() {
   const correct = questions.reduce((total, item, index) => total + (answers[index] === item.correct ? 1 : 0), 0);
-  const score = correct * 10;
-  const profile = profiles.find(item => score >= item.min && score <= item.max) || profiles[0];
+  const profile = profiles.find(item => correct >= item.min && correct <= item.max) || profiles[0];
 
-  els.scoreValue.textContent = score;
+  els.scoreValue.textContent = correct;
   els.correctCount.textContent = correct;
   els.resultImage.src = profile.image;
   els.resultImage.alt = profile.alt;
