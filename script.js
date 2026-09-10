@@ -18,7 +18,7 @@ const questions = [
   },
   {
     topic: "市場反應",
-    question: "強勁非農公布後，美債殖利率與美元同步走高，主要反映市場如何調整預期？",
+    question: "強勁的美國非農就業數據公布後，美國公債殖利率與美元同步走高，主要反映市場如何調整預期？",
     options: [
       "提高聯準會近期升息的可能性",
       "提高聯準會近期大幅降息的可能性",
@@ -32,7 +32,7 @@ const questions = [
   },
   {
     topic: "政策判讀",
-    question: "為什麼市場在強勁就業數據公布後，仍高度關注接下來的美國 CPI？",
+    question: "為什麼市場在強勁就業數據公布後，仍高度關注接下來的美國消費者物價指數（CPI）？",
     options: [
       "CPI 將決定美國政府是否增加就業人口",
       "聯準會委員已表明通膨數據是利率決策的重要關鍵",
@@ -46,7 +46,7 @@ const questions = [
   },
   {
     topic: "黃金市場",
-    question: "Waller 的偏鴿談話一度帶動黃金反彈。最合理的傳導邏輯是？",
+    question: "聯準會理事 Christopher Waller（華勒）的偏鴿談話一度帶動黃金反彈。最合理的傳導邏輯是？",
     options: [
       "談話態度降低市場升息預期，降低持有黃金的機會成本",
       "偏鴿訊號代表黃金供給即將中斷",
@@ -60,7 +60,7 @@ const questions = [
   },
   {
     topic: "能源市場",
-    question: "WTI 油價再度站上 90 美元，主要受到中東衝突不確定性推動。這反映油價增加了哪種溢價？",
+    question: "西德州中級原油（WTI）價格再度站上 90 美元，主要受到中東衝突不確定性推動。這反映油價增加了哪種溢價？",
     options: [
       "全球需求快速復甦帶來的景氣溢價",
       "美元走弱帶來的匯率溢價",
@@ -74,7 +74,7 @@ const questions = [
   },
   {
     topic: "美國通膨",
-    question: "美國核心 PCE 月增率回升，主要受到金融服務與保險價格影響。為何不宜立刻認定通膨全面惡化？",
+    question: "美國核心個人消費支出物價指數（核心 PCE）月增率回升，主要受到金融服務與保險價格影響。為何不宜立刻認定通膨全面惡化？",
     options: [
       "核心 PCE 不包含任何服務價格，因此不具參考性",
       "漲幅集中在與金融市場熱度相關的項目，且後續可能被調整",
@@ -101,8 +101,8 @@ const questions = [
     sourceLabel: "MacroMicro 8/30 一週盤前"
   },
   {
-    topic: "AI 與半導體",
-    question: "輝達財測優於預期，Vera Rubin 也進入量產。這對半導體產業最直接的意義是？",
+    topic: "人工智慧與半導體",
+    question: "輝達（NVIDIA）財測優於預期，新一代人工智慧（AI）運算平台 Vera Rubin 也進入量產。這對半導體產業最直接的意義是？",
     options: [
       "AI 基礎建設需求仍在支撐先進晶片與相關供應鏈",
       "半導體成長動能已由 AI 全面轉向消費電子",
@@ -132,7 +132,7 @@ const questions = [
     topic: "債務與成長",
     question: "面對美國債務與高利率壓力，為什麼經濟成長仍是重要觀察重點？",
     options: [
-      "只要名目 GDP 成長，任何債務規模都不再構成風險",
+      "只要名目國內生產毛額（GDP）成長，任何債務規模都不再構成風險",
       "當成長率足以支撐利息負擔時，債務壓力較容易被消化",
       "經濟成長會讓公債供給自然下降，利率也會同步歸零",
       "債務問題只能等待央行降息，與經濟基本面無關"
@@ -328,7 +328,7 @@ async function copyPromo() {
   els.copyBtn.textContent = "已複製";
   els.toast.classList.add("is-visible");
   window.setTimeout(() => {
-    els.copyBtn.textContent = "複製";
+    els.copyBtn.textContent = "複製兌換碼";
     els.toast.classList.remove("is-visible");
   }, 1800);
 }
