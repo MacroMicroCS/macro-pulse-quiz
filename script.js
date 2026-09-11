@@ -1,90 +1,93 @@
+const SOURCE_CYCLE = "https://www.macromicro.me/blog/quant-report-ecocycle-11-industry";
 const SOURCE_WEEKLY = "https://www.macromicro.me/blog/mm-weekly-premarket-update-nonfarm-payrolls-returned-to-growth-range-as-expected-this-week-s-cpi-will-be-the-decisive-factor";
-const SOURCE_JACKSON = "https://www.macromicro.me/blog/mm-weekly-premarket-update-warsh-reiterates-commitment-to-combating-inflation-at-central-bank-meeting-focus-this-week-on-nonfarm";
+const SOURCE_AI = "https://www.macromicro.me/blog/market-update-ai-breaks-cycle-manufacturing-and-productivity-resonate-and-rise";
+const SOURCE_BONDS = "https://www.macromicro.me/blog/market-update-global-longterm-bond-yields-surge-are-bonds-still-a-good-investment-option";
+const SOURCE_MACROMICRO = "https://www.macromicro.me/";
 
 const questions = [
   {
-    topic: "台灣景氣",
-    question: "台灣景氣燈號維持高檔，而且內外需求都在成長。這代表什麼？",
+    topic: "景氣循環",
+    question: "根據財經 M 平方網站的景氣循環圖，假設目前景氣落在「擴張」象限，代表經濟成長動能與通膨壓力同步升溫。此時哪一組資產配置邏輯較合理？",
     options: [
-      "景氣仍有動能，內外需求都有支撐",
-      "只有出口變好，內需正在轉弱",
-      "景氣主要依靠政府支出",
-      "景氣已開始明顯降溫"
+      "擴張象限通常代表股市表現優於債市",
+      "擴張象限通常代表股票與債券都應減碼",
+      "不論景氣在哪個階段，股票長期報酬較高，因此都應該加碼股票",
+      "景氣循環只影響經濟，不會影響不同資產的相對表現"
     ],
     correct: 0,
-    explanation: "內需與外需同時成長，代表整體景氣仍然穩健。",
-    source: SOURCE_JACKSON,
-    sourceLabel: "MacroMicro 8/30 一週盤前"
+    explanation: "景氣循環圖反映經濟成長與通膨的不同組合。景氣位於「擴張」象限時，經濟成長動能通常仍強，企業獲利有支撐，股票表現往往優於債券；同時通膨與利率上升，債券價格可能承壓。進入「趨緩」後，股債表現可能同時轉弱；到了「衰退」階段，債券等防禦性資產通常更受青睞。不同階段的受惠資產不同，配置也應隨景氣位置調整。",
+    source: SOURCE_CYCLE,
+    sourceLabel: "財經 M 平方：景氣循環下的產業輪動"
   },
   {
-    topic: "美國就業",
-    question: "美國新增就業高於預期，但薪資成長放慢。市場最合理的結論是什麼？",
+    topic: "台灣 GDP",
+    question: "假設今年台灣 GDP 年增率預估來到約 12%，同時台股大幅上漲。若想了解這波經濟成長背後最重要的推力，GDP 的哪個項目最值得優先觀察？",
     options: [
-      "經濟仍有支撐，但利率方向還要搭配通膨數據判斷",
-      "經濟即將衰退，聯準會應立即降息",
-      "薪資成長放慢，代表通膨一定會快速下降",
-      "就業高於預期，代表聯準會一定會升息"
-    ],
-    correct: 0,
-    explanation: "新增就業強勁，顯示美國經濟並不弱；但薪資成長放慢，沒有出現通膨壓力同步升高的訊號。因此，這份就業報告不足以直接決定利率方向，市場還需要觀察接下來的 CPI。",
-    source: SOURCE_WEEKLY,
-    sourceLabel: "MacroMicro 9/6 一週盤前"
-  },
-  {
-    topic: "政策判讀",
-    question: "如果接下來公布的美國消費者物價指數（CPI）高於市場預期，最可能如何影響市場對利率的看法？",
-    options: [
-      "市場可能預期利率維持高檔更久",
-      "市場可能提高近期降息的預期",
-      "市場會認為就業數據失去參考價值",
-      "市場會認為通膨已經回到目標"
-    ],
-    correct: 0,
-    explanation: "CPI 高於預期，代表物價壓力比市場原先想得更強，聯準會就比較沒有空間降息。因此，市場可能預期利率會在高檔停留更久。",
-    source: SOURCE_WEEKLY,
-    sourceLabel: "MacroMicro 9/6 一週盤前"
-  },
-  {
-    topic: "能源市場",
-    question: "中東衝突升溫時，西德州中級原油（WTI）價格上漲，主要反映哪種風險？",
-    options: [
-      "原油需求快速下降",
-      "美元匯率變動",
-      "原油供應可能中斷",
-      "美國企業獲利下降"
+      "民間消費",
+      "政府消費",
+      "出口與淨出口",
+      "房屋租金"
     ],
     correct: 2,
-    explanation: "市場擔心衝突影響原油生產或運輸，因此先推高油價。",
-    source: SOURCE_WEEKLY,
-    sourceLabel: "MacroMicro 9/6 一週盤前"
+    explanation: "台灣是高度出口導向的經濟體。當全球 AI、半導體與電子產品需求強勁時，出口與淨出口往往會成為 GDP 成長的重要推力，也可能反映在科技業營收與企業獲利上。因此，看到 GDP 很強，不能只看總數，更要拆解是哪個 GDP 組成項目帶動成長。",
+    source: SOURCE_MACROMICRO,
+    sourceLabel: "財經 M 平方：台灣 GDP 與總體資料"
   },
   {
-    topic: "黃金市場",
-    question: "聯準會理事 Christopher Waller（華勒）釋出偏鴿訊號後，黃金一度上漲。最合理的原因是？",
+    topic: "通膨與利率",
+    question: "近期通膨數據重新升溫，市場開始擔心美國聯準會（Fed）可能再次升息。其他條件不變，哪一組市場反應最合理？",
     options: [
-      "市場對升息的預期下降，持有黃金的成本降低",
-      "市場預期黃金產量即將減少",
-      "市場預期通膨會立刻消失",
-      "市場預期原油價格將大幅下跌"
+      "債券價格承壓，股票估值可能下降",
+      "債券價格上漲、股票估值上升，美元走弱",
+      "主要影響美國銀行，對股票與債券投資人的影響有限",
+      "通膨升溫代表經濟轉強，因此風險性資產通常會同步上漲"
     ],
     correct: 0,
-    explanation: "利率壓力降低時，不會配息的黃金相對更有吸引力。",
+    explanation: "通膨升溫可能讓美國聯準會延後降息，甚至重新考慮升息。利率上升會提高資金成本與折現率，因此可能壓低股票估值；債券殖利率上升時，既有債券價格則面臨下跌壓力；較高的美元利率通常也會對美元形成支撐。聯準會的利率決策會影響股票、債券、匯率與整體資產配置。",
     source: SOURCE_WEEKLY,
-    sourceLabel: "MacroMicro 9/6 一週盤前"
+    sourceLabel: "財經 M 平方：通膨與聯準會政策觀察"
   },
   {
-    topic: "債務與成長",
-    question: "面對高利率與龐大債務，為什麼美國的經濟成長很重要？",
+    topic: "AI 投資",
+    question: "科技巨頭持續擴大 AI 資本支出、資料中心越蓋越多，AI 類股也一路上漲。此時投資人最應該追蹤什麼？",
     options: [
-      "經濟成長較強時，債務負擔比較容易承受",
-      "經濟成長後，政府就不需要再借錢",
-      "經濟成長會讓利率立刻下降",
-      "經濟成長與債務負擔沒有關係"
+      "哪家公司的 AI 資本支出最大",
+      "AI 類股成交量是否繼續增加",
+      "AI 投資最後能否轉化成訂單、營收與獲利",
+      "哪家公司今年的股價漲幅最高"
     ],
-    correct: 0,
-    explanation: "經濟規模與收入增加後，支付債務和利息會相對容易。",
-    source: SOURCE_JACKSON,
-    sourceLabel: "MacroMicro 8/30 一週盤前"
+    correct: 2,
+    explanation: "AI 投資可以創造龐大的供應鏈需求，但長期行情最終仍要回到「資本支出 → 訂單 → 營收 → 獲利」。如果投資持續增加，卻沒有帶來相應的商業化與獲利成長，就要留意市場期待是否跑得太快。",
+    source: SOURCE_AI,
+    sourceLabel: "財經 M 平方：AI、製造業與生產力循環"
+  },
+  {
+    topic: "長債風險",
+    question: "朋友跟你說：「美債殖利率都這麼高了，現在買長天期債券 ETF 應該很安全吧？」你會怎麼回答？",
+    options: [
+      "沒錯，殖利率高代表債券價格一定已經到底",
+      "不一定，如果殖利率繼續上升，長債價格仍可能明顯下跌",
+      "只要美國聯準會不升息，長債就不可能下跌",
+      "債券 ETF 有配息，因此不必在意價格漲跌"
+    ],
+    correct: 1,
+    explanation: "「殖利率很高」不等於「殖利率不會更高」。長天期債券對利率變化尤其敏感；即使美國聯準會沒有升息，通膨、政府發債或期限溢價上升，都可能繼續推高長端殖利率，造成長債價格下跌。",
+    source: SOURCE_BONDS,
+    sourceLabel: "財經 M 平方：全球長債殖利率與債券配置"
+  },
+  {
+    topic: "全球市場",
+    question: "截至 2026 年 9 月上旬，若以各市場常用基準的當地貨幣價格報酬比較，以下哪個市場今年以來表現最好？",
+    options: [
+      "黃金",
+      "台股",
+      "韓股",
+      "美國那斯達克（Nasdaq）"
+    ],
+    correct: 2,
+    explanation: "不同市場的表現會受到產業結構、企業獲利、資金流向、利率、匯率與市場情緒影響。韓股受到半導體與 AI 供應鏈題材帶動，相關企業獲利與市場預期改善，推升整體股市表現。比較市場績效時，仍應確認期間、計價幣別，以及採用價格報酬或含息報酬，才能公平判斷。",
+    source: SOURCE_MACROMICRO,
+    sourceLabel: "財經 M 平方：南韓總經成績單"
   }
 ];
 
